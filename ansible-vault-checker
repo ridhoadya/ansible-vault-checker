@@ -1,7 +1,6 @@
 #!/usr/bin/env ruby
 
 require 'yaml'
-require 'optparse'
 
 abort "Exit program. Ansible vault is not installed" if !system("which ansible-vault > /dev/null")
 abort "Usage: ansible-vault-checker PASSWORDPATH 'FILEPATH'" if ARGV.length != 2
